@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="show_by">Show by</string>
+
+
+    <!-- TODO: message  -->
+    <string name="addProduct_saveFailed" > Error with saving inventory</string>
+    <string name="addProduct_saveSuccessful">inventory save</string>
+    <string name="home_check">check</string>
+    <string name="count_element_check_out">all count:: </string>
+    <string name="all_total">all total:</string>
+
+</resources>

@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:id="@+id/item_home"
+        android:icon="@drawable/icons8_home_2"
+        android:title="Home"/>
+    <item
+        android:id="@+id/item_record"
+        android:icon="@drawable/icons8_file_3"
+        android:title="record"/>
+    <item
+        android:title=""
+        android:id="@+id/item_add"
+        android:icon="@drawable/baseline_add_circle_outline_black_36dp"
+        />
+    <item
+        android:id="@+id/item_report"
+        android:icon="@drawable/icons8_playlist_32px"
+        android:title="report"/>
+    <item
+        android:id="@+id/item_sign"
+        android:icon="@drawable/ic_outline_group_24"
+        android:title="sign up"/>
+</menu>
