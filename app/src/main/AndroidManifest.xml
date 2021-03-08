@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginInActivity"
+        <activity android:name=".view.LoginInActivity"
           ></activity>
         <activity
             android:name=".MainActivity"
@@ -23,7 +23,7 @@
         </activity>
 
         <provider
-            android:name=".data.InventoryProvider"
+            android:name=".model.provider.InventoryProvider"
             android:authorities="com.example.android.inventory"
             android:exported="false" />
     </application>

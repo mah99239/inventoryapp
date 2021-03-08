@@ -1,0 +1,79 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_optimizationLevel="dependency_ordering"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <androidx.constraintlayout.widget.Placeholder
+
+        android:id="@+id/placeholder_edittext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:content="@id/textInputLayout3"
+
+        app:layout_constraintEnd_toStartOf="@+id/ph_record_right"
+        app:layout_constraintStart_toStartOf="@+id/ph_record_left"
+        app:layout_constraintTop_toTopOf="@+id/ph_record_top" />
+
+    <androidx.constraintlayout.widget.Placeholder
+
+        android:id="@+id/placeholder_textview"
+
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+
+        app:content="@id/textView"
+        app:layout_constraintStart_toStartOf="@+id/ph_record_left"
+        app:layout_constraintTop_toBottomOf="@+id/placeholder_edittext" />
+
+    <androidx.constraintlayout.widget.Placeholder
+
+        android:id="@+id/placeholder_listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        app:content="@id/lst_record"
+        app:layout_constraintBottom_toTopOf="@+id/ph_record_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/ph_record_right"
+        app:layout_constraintStart_toStartOf="@+id/ph_record_left"
+        app:layout_constraintTop_toBottomOf="@+id/placeholder_textview" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ph_record_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_end="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ph_record_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ph_record_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_end="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ph_record_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="16dp" />
+</merge>

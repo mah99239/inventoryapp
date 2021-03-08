@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AddProductFragment">
+    android:nestedScrollingEnabled="true"
+    tools:context=".view.AddProductFragment">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="@color/colorAdd"
+        android:background="@color/colorPrimary"
         android:gravity="center"
         android:text="Add product"
         android:textColor="#000000"
@@ -84,9 +85,9 @@
 
 
             android:text="cancal"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/blackText"
             android:textStyle="italic"
-            app:backgroundTint="#FFFFFF"
+            app:backgroundTint="@color/colorAccent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btn_addProduct_add"
             app:layout_constraintStart_toStartOf="parent"
@@ -99,9 +100,9 @@
             android:layout_height="wrap_content"
 
             android:text="add"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/blackText"
             android:textStyle="italic"
-            app:backgroundTint="#FFFFFF"
+            app:backgroundTint="@color/colorAccent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.358"
             app:layout_constraintStart_toEndOf="@+id/btn_addProduct_cancel"

@@ -10,5 +10,7 @@
     <string name="home_check">check</string>
     <string name="count_element_check_out">all count:: </string>
     <string name="all_total">all total:</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+
 
 </resources>

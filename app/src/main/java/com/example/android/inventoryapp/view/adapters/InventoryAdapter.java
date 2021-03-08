@@ -1,4 +1,4 @@
-package com.example.android.inventoryapp.data;
+package com.example.android.inventoryapp.view.adapters;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -9,6 +9,7 @@ import android.widget.CursorAdapter;
 import android.widget.TextView;
 
 import com.example.android.inventoryapp.R;
+import com.example.android.inventoryapp.model.contact.InventoryContract;
 
 public class InventoryAdapter extends CursorAdapter {
     public InventoryAdapter(Context context, Cursor c) {
@@ -20,6 +21,7 @@ public class InventoryAdapter extends CursorAdapter {
         return LayoutInflater.from(context).inflate(
                 R.layout.list_item_inventory, parent, false);
     }
+
 
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
@@ -38,4 +40,5 @@ public class InventoryAdapter extends CursorAdapter {
         nameTextView.setText(inventoryName);
         priceTextView.setText(inventoryPrice+"$");
     }
+
 }

@@ -1,4 +1,4 @@
-package com.example.android.inventoryapp.data;
+package com.example.android.inventoryapp.model.contact;
 
 
 import android.content.ContentResolver;

@@ -1,95 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:orientation="vertical"
-    tools:context=".SignFragment">
+    android:nestedScrollingEnabled="true"
+
+    tools:context=".view.SignFragment">
+
+    <androidx.constraintlayout.widget.Placeholder
+        android:id="@+id/placeholder"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_confirm" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="77dp"
-        android:layout_gravity="center"
-        android:background="#2196F3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
         android:gravity="center"
         android:text="add new account"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp" />
+        android:textColor="@color/blackText"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="77dp"
+        tools:layout_conversion_absoluteWidth="411dp" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="300dp"
+        android:id="@+id/textInputLayout6"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="54dp"
         android:hint="user"
-        app:boxBackgroundColor="#FFFFFF"
 
+        app:boxBackgroundColor="#FFFFFF"
         app:boxBackgroundMode="outline"
         app:boxCornerRadiusBottomEnd="40dp"
         app:boxCornerRadiusBottomStart="40dp"
         app:boxCornerRadiusTopEnd="40dp"
-        app:boxCornerRadiusTopStart="40dp">
+        app:boxCornerRadiusTopStart="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toTopOf="@+id/guideline_begin"
+        tools:layout_conversion_absoluteHeight="51dp"
+        tools:layout_conversion_absoluteWidth="300dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_login_user"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:gravity="start"
-            android:paddingTop="12dp" />
+            android:paddingTop="12dp"
+            tools:layout_conversion_absoluteHeight="46dp"
+            tools:layout_conversion_absoluteWidth="300dp"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="136dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="12dp"
+        android:id="@+id/textInputLayout7"
+        android:layout_width="0dp"
 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:hint="password"
         app:boxBackgroundColor="#FFFFFF"
         app:boxBackgroundMode="outline"
         app:boxCornerRadiusBottomEnd="40dp"
         app:boxCornerRadiusBottomStart="40dp"
         app:boxCornerRadiusTopEnd="40dp"
-        app:boxCornerRadiusTopStart="40dp">
+        app:boxCornerRadiusTopStart="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
+        tools:layout_conversion_absoluteHeight="51dp"
+        tools:layout_conversion_absoluteWidth="300dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_sign_pass"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="12dp" />
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            tools:layout_conversion_absoluteHeight="46dp"
+            tools:layout_conversion_absoluteWidth="300dp"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="200dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="12dp"
+        android:id="@+id/textInputLayout8"
+        android:layout_width="0dp"
 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:hint="password"
         app:boxBackgroundColor="#FFFFFF"
         app:boxBackgroundMode="outline"
         app:boxCornerRadiusBottomEnd="40dp"
         app:boxCornerRadiusBottomStart="40dp"
         app:boxCornerRadiusTopEnd="40dp"
-        app:boxCornerRadiusTopStart="40dp">
+        app:boxCornerRadiusTopStart="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+        tools:layout_conversion_absoluteHeight="51dp"
+        tools:layout_conversion_absoluteWidth="300dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_sign_cpass"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="12dp" />
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            tools:layout_conversion_absoluteHeight="46dp"
+            tools:layout_conversion_absoluteWidth="300dp"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="264dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btn_login_confirm"
-        android:layout_width="330dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="54dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
         android:text="confirm"
         app:backgroundTint="#2196F3"
-        app:cornerRadius="40dp" />
-</LinearLayout>
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout8"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="330dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="96dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.97811216"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_baseline_mood_24"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_confirm" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.android.inventoryapp;
+package com.example.android.inventoryapp.view;
 
 import android.content.ContentValues;
 import android.net.Uri;
@@ -12,8 +12,10 @@ import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.android.inventoryapp.data.InventoryContract;
+import com.example.android.inventoryapp.R;
+import com.example.android.inventoryapp.model.contact.InventoryContract;
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.transition.MaterialFadeThrough;
 
 public class AddProductFragment extends Fragment {
 
@@ -27,6 +29,7 @@ public class AddProductFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        MaterialFadeThrough exitTransition = new MaterialFadeThrough();
 
     }
 

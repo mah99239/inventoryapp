@@ -1,4 +1,4 @@
-package com.example.android.inventoryapp.data;
+package com.example.android.inventoryapp.model.provider;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;
@@ -11,6 +11,9 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.example.android.inventoryapp.model.contact.InventoryContract;
+import com.example.android.inventoryapp.model.db.InventoryDbHelper;
 
 public class InventoryProvider extends ContentProvider {
     public static final int INVENTORY = 111;

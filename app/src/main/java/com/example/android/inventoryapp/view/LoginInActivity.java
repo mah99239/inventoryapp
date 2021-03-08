@@ -1,4 +1,4 @@
-package com.example.android.inventoryapp;
+package com.example.android.inventoryapp.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.android.inventoryapp.R;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class LoginInActivity extends AppCompatActivity {
@@ -16,6 +17,7 @@ public class LoginInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_in);
+
         mTextInputEditTextUser = findViewById(R.id.et_login_user);
         mTextInputEditTextPass =findViewById(R.id.et_login_pass);
         mButtonLogin =findViewById(R.id.btn_login_confirm);

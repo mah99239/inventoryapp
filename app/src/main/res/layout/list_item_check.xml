@@ -8,7 +8,7 @@
     <TextView
         android:id="@+id/tv_check_name"
         android:layout_width="wrap_content"
-        android:layout_height="32dp"
+        android:layout_height="wrap_content"
         android:layout_weight="0.4"
         android:gravity="center"
         android:text="TextView"
@@ -18,7 +18,7 @@
     <TextView
         android:id="@+id/tv_check_price"
         android:layout_width="wrap_content"
-        android:layout_height="32dp"
+        android:layout_height="wrap_content"
         android:layout_weight="0.1"
         android:gravity="center"
         android:text="1$"
@@ -28,16 +28,15 @@
     <ImageButton
         android:id="@+id/btn_check_minuse"
         android:layout_width="wrap_content"
-        android:layout_height="32dp"
-        android:layout_weight="0.15"
+        android:layout_height="wrap_content"
 
         android:background="#FFFFFF"
-        app:srcCompat="@drawable/baseline_minimize_black_24dp" />
+        app:srcCompat="@drawable/baseline_remove_24" />
 
     <EditText
         android:id="@+id/et_check_count"
-        android:layout_width="wrap_content"
-        android:layout_height="32dp"
+        android:layout_width="24dp"
+        android:layout_height="48dp"
         android:layout_weight="0.1"
         android:gravity="center"
         android:maxLength="4"
@@ -48,19 +47,18 @@
     <ImageButton
         android:id="@+id/btn_check_plus"
         android:layout_width="wrap_content"
-        android:layout_height="32dp"
-        android:layout_weight="0.15"
+        android:layout_height="wrap_content"
         android:background="#FFFFFF"
         app:srcCompat="@drawable/baseline_add_black_24dp" />
 
     <TextView
         android:id="@+id/tv_check_total"
         android:layout_width="wrap_content"
-        android:layout_height="32dp"
+        android:layout_height="wrap_content"
         android:layout_weight="0.1"
         android:gravity="center"
         android:text="12$"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/blackText"
         android:textSize="12sp" />
 
 </LinearLayout>

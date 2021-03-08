@@ -1,10 +1,19 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimarySurface">@color/colorPrimaryLight</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/blackText</item>
+        <item name="android:windowActivityTransitions" tools:targetApi="lollipop">true</item>
+
+    </style>
+    <style name="MaterialAnimations" parent="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowContentTransitions" tools:ignore="NewApi">true</item>
+
     </style>
     <style name="Widget.App.Button.OutlinedButton.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="iconPadding">0dp</item>
@@ -14,5 +23,16 @@
         <item name="android:paddingRight">12dp</item>
         <item name="android:minWidth">48dp</item>
         <item name="android:minHeight">48dp</item>
+    </style>
+    <style name="mystyle" >
+        <item name="android:textColor">#FF255F26</item>
+    </style>
+    <style name="PauseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+    </style>
+
+    <style name="PauseDialogAnimation">
+    <item name="android:windowEnterAnimation">@anim/slideup</item>
+    <item name="android:windowExitAnimation">@anim/slidedown</item>
     </style>
 </resources>

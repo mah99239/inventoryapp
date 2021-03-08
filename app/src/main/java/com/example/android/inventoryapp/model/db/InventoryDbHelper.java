@@ -1,10 +1,12 @@
-package com.example.android.inventoryapp.data;
+package com.example.android.inventoryapp.model.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
+
+import com.example.android.inventoryapp.model.contact.InventoryContract;
 
 public class InventoryDbHelper extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 1;

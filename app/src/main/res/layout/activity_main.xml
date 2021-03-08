@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     tools:context=".MainActivity">
 
     <FrameLayout
@@ -13,8 +12,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gl_main_right"
+        app:layout_constraintStart_toStartOf="@+id/gl_main_left"
         app:layout_constraintTop_toTopOf="parent">
 
     </FrameLayout>
@@ -23,7 +22,7 @@
         android:id="@+id/coordinatorLayout"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:rotationX="5"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -34,7 +33,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="bottom"
-            app:backgroundTint="#2196F3"
+            app:backgroundTint="?attr/colorPrimary"
+            app:elevation="24dp"
             app:fabCradleMargin="0dp"
             app:fabCradleRoundedCornerRadius="0dp"
             app:fabCradleVerticalOffset="12dp">
@@ -44,7 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:background="#2196F3"
+                android:background="?attr/colorPrimary"
                 app:itemIconTint="@color/design_default_color_on_secondary"
                 app:itemTextColor="#000000"
                 app:menu="@menu/bottom_navigation_menu" />
@@ -54,4 +54,19 @@
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_main_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_main_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

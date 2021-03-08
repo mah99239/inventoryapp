@@ -1,21 +1,17 @@
-package com.example.android.inventoryapp.data;
+package com.example.android.inventoryapp.view.adapters;
 
 import android.content.Context;
 import android.database.Cursor;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.CursorAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ListView;
 import android.widget.TextView;
 
-import androidx.loader.content.CursorLoader;
-
 import com.example.android.inventoryapp.R;
+import com.example.android.inventoryapp.model.contact.InventoryContract;
 
 import java.util.ArrayList;
 import java.util.List;

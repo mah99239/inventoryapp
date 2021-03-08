@@ -1,4 +1,4 @@
-package com.example.android.inventoryapp;
+package com.example.android.inventoryapp.view;
 
 import android.os.Bundle;
 
@@ -11,8 +11,10 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.ListView;
 
+import com.example.android.inventoryapp.R;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.android.material.transition.MaterialFadeThrough;
 
 public class ReportFragment extends Fragment {
 
@@ -23,6 +25,7 @@ public class ReportFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        MaterialFadeThrough exitTransition = new MaterialFadeThrough();
 
 
     }
